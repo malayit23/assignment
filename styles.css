@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    width: 1090px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    z-index: 10;
+}
+nav ol{
+    display: flex;
+}
+nav ol li{
+    margin: 0 1rem;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "Cabin", sans-serif;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+nav ol li:hover{
+    color: #FF5555;
+    
+}
+.navbtn{
+    width: 180px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+.navbtn:hover{
+    border: 2px solid;
+    border-color: #000;
+    color: black;
+    background-color: white;
+  
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.navdiv1{
+    display: flex;
+    place-items: center;
+   
+}
+.star{
+    right: 80px;
+    top: 56px;
+}
+.ellipse1{
+    position: absolute;
+    top: 48px;
+    left: 200px;
+    z-index: -1;
+}
+.ellipse2{
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    right: 6%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 52% 48%;
+    height: 100vh;
+    
+    
+}
+ .item1{
+    display: flow-root;
+    padding-left: 2rem;
+}
+h1{
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 60px;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.item2>span{
+    position: absolute;
+}
+
+.para{ 
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.iphone{
+    rotate: -15deg;
+    top:30.5%;
+    right:2%;
+}
+.iphone1{
+    top: 20.5%;
+    right: 7%;
+}
+.iphone2{
+    right: 18%;
+    top: 11%;
+    rotate: -15deg;
+}
+.ring{
+    z-index: -1;
+    top: 10%;
+    right: 5%;
+}
+.divbtn{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 2rem;
+}
+.divbtn .btn1{
+    margin-right: 2rem;
+    background-color: #000;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+.divbtn .btn2{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: medium;
+}
+.starsmall{
+    position: absolute;
+    top: 16%;
+    left: 0;
+}
+.starsmall1{
+    position: absolute;
+    left: 11%;
+    bottom: 15%;
+}
+.starsmall2{
+    bottom: 0;
+    right: 38%;
+    rotate: 35deg;
+}
+.pulse{
+    animation: pulse 2s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.star{
+    animation: star 3s infinite;
+}
+@keyframes star {
+    50%{
+        transform: rotate(180deg);
+    }   
+}
+.starsmall{
+    animation: starsmall 2s ease infinite;
+}
+@keyframes starsmall {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.starsmall2{
+    animation: starsmall2 2s ease infinite;
+    animation-delay: 2s;
+}
+@keyframes starsmall2 {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+.starsmall1{
+    animation: starsmall1 2s ease infinite;
+}
+@keyframes starsmall1 {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
